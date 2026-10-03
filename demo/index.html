@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Demo ficticia e independiente del flujo AutoGeo">
+    <title>AutoGeo | Demo Showcase</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-shell">
+        <aside class="sidebar" aria-label="Navegacion principal">
+            <a class="brand" href="#resumen" aria-label="AutoGeo inicio">
+                <span class="brand-mark">AG</span>
+                <span><strong>AutoGeo</strong><small>showcase demo</small></span>
+            </a>
+            <nav class="nav-list">
+                <a class="nav-link is-active" href="#resumen" data-view="resumen"><span class="nav-icon">01</span>Resumen</a>
+                <a class="nav-link" href="#generar" data-view="generar"><span class="nav-icon">02</span>Generar</a>
+                <a class="nav-link" href="#historial" data-view="historial"><span class="nav-icon">03</span>Historial</a>
+            </nav>
+            <div class="sidebar-note">
+                <span class="status-dot"></span>
+                <div><strong>Modo demo</strong><small>Sin backend conectado</small></div>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <header class="topbar">
+                <div>
+                    <p class="eyebrow">AUTOMATIZACION DOCUMENTAL</p>
+                    <h1 id="page-title">Resumen del proyecto</h1>
+                </div>
+                <div class="topbar-meta"><span class="mini-label">AMBIENTE</span><span class="demo-pill">FICTICIO</span></div>
+            </header>
+
+            <section id="resumen" class="view is-visible" data-section="resumen">
+                <div class="intro-row">
+                    <div>
+                        <p class="kicker">Proyecto de demostracion</p>
+                        <h2>Del dato tecnico a un flujo <em>trazable.</em></h2>
+                        <p class="intro-copy">Una vista segura del recorrido que organiza solicitudes geotecnicas antes de producir un resultado documental.</p>
+                    </div>
+                    <a class="primary-button" href="#generar" data-view="generar">Abrir solicitud <span>→</span></a>
+                </div>
+
+                <div class="metric-grid">
+                    <article class="metric-card"><span class="metric-label">ESTADO DEL FLUJO</span><strong>Listo para validar</strong><span class="metric-accent green"></span></article>
+                    <article class="metric-card"><span class="metric-label">SOLICITUDES DEMO</span><strong>08</strong><span class="metric-accent violet"></span></article>
+                    <article class="metric-card"><span class="metric-label">TIEMPO DE RESPUESTA</span><strong>Simulado</strong><span class="metric-accent amber"></span></article>
+                </div>
+
+                <div class="content-grid">
+                    <article class="panel process-panel">
+                        <div class="panel-heading"><div><span class="panel-index">01</span><h3>Flujo de procesamiento</h3></div><span class="panel-tag">4 etapas</span></div>
+                        <div class="process-list">
+                            <div class="process-step is-complete"><span class="step-number">01</span><div><strong>Captura</strong><small>Datos generales y tecnicos</small></div><span class="step-state">Listo</span></div>
+                            <div class="process-step is-complete"><span class="step-number">02</span><div><strong>Validacion</strong><small>Contrato y archivos de soporte</small></div><span class="step-state">Listo</span></div>
+                            <div class="process-step is-current"><span class="step-number">03</span><div><strong>Procesamiento</strong><small>Coordinacion del resultado</small></div><span class="step-state">Demo</span></div>
+                            <div class="process-step"><span class="step-number">04</span><div><strong>Entrega</strong><small>Referencia descargable</small></div><span class="step-state">Pendiente</span></div>
+                        </div>
+                    </article>
+                    <article class="panel project-card">
+                        <div class="panel-heading"><div><span class="panel-index">02</span><h3>Proyecto activo</h3></div><span class="live-label"><span class="status-dot"></span> Demo</span></div>
+                        <div class="project-title"><span class="project-symbol">P01</span><div><strong>Proyecto Demo 01</strong><small>Cliente Ficticio · Zona de Prueba</small></div></div>
+                        <div class="project-details"><div><span>Categoria</span><strong>Demo</strong></div><div><span>Sondeos</span><strong>03</strong></div><div><span>Adjuntos</span><strong>01</strong></div></div>
+                        <a class="text-link" href="#generar" data-view="generar">Ver solicitud <span>↗</span></a>
+                    </article>
+                </div>
+            </section>
+
+            <section id="generar" class="view" data-section="generar" hidden>
+                <div class="section-heading"><div><p class="kicker">Solicitud controlada</p><h2>Preparar generación</h2><p>Todos los valores están inventados para esta demostración.</p></div><span class="safe-badge">100% offline</span></div>
+                <form class="panel request-form" id="demo-form">
+                    <div class="form-section"><span class="panel-index">01</span><div><h3>Datos del proyecto</h3><p>Información mínima para iniciar el flujo.</p></div></div>
+                    <div class="form-grid">
+                        <label>Nombre del proyecto<input name="project" value="Proyecto Demo 01" required></label>
+                        <label>Cliente<input name="client" value="Cliente Ficticio" required></label>
+                        <label>Ubicación<input name="location" value="Zona de Prueba" required></label>
+                        <label>Categoría<select name="category"><option>Categoria Demo</option><option>Revision preliminar</option></select></label>
+                    </div>
+                    <div class="form-section second"><span class="panel-index">02</span><div><h3>Registro técnico</h3><p>Un registro sintético de perforación.</p></div></div>
+                    <div class="form-grid compact"><label>Identificador<input name="boring" value="SONDEO-DEMO-01" required></label><label>Profundidad<input name="depth" value="6 m" required></label><label class="wide">Descripción del suelo<input name="soil" value="Material sintético de prueba" required></label></div>
+                    <div class="form-footer"><span class="form-note"><span class="check-icon">✓</span> La solicitud se valida localmente.</span><button class="primary-button" type="submit">Validar solicitud <span>→</span></button></div>
+                    <div class="form-result" id="form-result" aria-live="polite" hidden></div>
+                </form>
+            </section>
+
+            <section id="historial" class="view" data-section="historial" hidden>
+                <div class="section-heading"><div><p class="kicker">Actividad reciente</p><h2>Historial de demostración</h2><p>Registros ficticios para mostrar el seguimiento del flujo.</p></div><span class="safe-badge">Datos demo</span></div>
+                <div class="panel table-panel"><div class="table-head"><span>PROYECTO</span><span>ESTADO</span><span>FECHA</span><span>ACCION</span></div><div class="table-row"><strong>Proyecto Demo 01</strong><span class="table-status ready">Listo para validar</span><span>03 oct 2026</span><a href="#generar" data-view="generar">Abrir</a></div><div class="table-row"><strong>Ensayo Sintético 02</strong><span class="table-status done">Completado</span><span>01 oct 2026</span><a href="#generar" data-view="generar">Abrir</a></div><div class="table-row"><strong>Modelo Prueba 03</strong><span class="table-status review">En revisión</span><span>28 sep 2026</span><a href="#generar" data-view="generar">Abrir</a></div></div>
+            </section>
+
+            <footer class="footer-note"><span>AutoGeo Showcase</span><span>Interfaz independiente · Datos ficticios · Sin backend privado</span></footer>
+        </main>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

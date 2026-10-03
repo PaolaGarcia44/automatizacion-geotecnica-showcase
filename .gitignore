@@ -1,0 +1,25 @@
+# Local and editor files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+
+# Generated and temporary files
+__pycache__/
+*.py[cod]
+node_modules/
+dist/
+build/
+*.log
+
+# Proprietary document materials
+*.xlsx
+*.xls
+*.docx
+*.doc
+*.pdf

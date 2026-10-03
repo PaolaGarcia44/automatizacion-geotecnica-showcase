@@ -1,0 +1,19 @@
+{
+  "project_name": "Proyecto Demo 01",
+  "client_name": "Cliente Ficticio",
+  "location": "Zona de Prueba",
+  "category": "demo",
+  "borings": [
+    {
+      "identifier": "SONDEO-DEMO-01",
+      "depth_m": 6,
+      "soil_description": "Material sintetico de prueba"
+    }
+  ],
+  "attachments": [
+    {
+      "filename": "imagen-demo-01.png",
+      "kind": "supporting-image"
+    }
+  ]
+}
